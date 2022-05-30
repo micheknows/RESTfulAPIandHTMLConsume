@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="myStyle.css" />
+    <script src="JsCode.js"></script>
+    <title>Welcome to Number Guessing Game</title>
+</head>
+<body>
+    <h1>Welcome to Number Guessing Game</h1>
+    <form name="numberGuess">
+        <label for="lowerLimit">Lower Limit:  </label>
+        <input id="lowerLimit" type="text" name="lowerLimit" /><br />
+        <label for="upperLimit">Upper Limit:  </label>
+        <input id="upperLimit" type="text" name="upperLimit" />
+        <input id="generateBtn" type="button" value="Generate a Secret Number" onclick="generateNumber();" />
+        <p></p>
+
+        <div id="guessLabel" name="guessLabel"></div>
+        <p></p>
+
+        <label for="makeGuess">Make a Guess:  </label>
+        <input id="makeGuess" type="text" name="makeGuess" />
+        <input id="playBtn" disabled="disabled" type="button" value="Play" onclick="playGuess();"/>
+        <p></p>
+
+        <div id="attemptLabel" name="attemptLabel">Attempts:  </div>
+        <p></p>
+        <div id="feedbackLabel" name="feedbackLabel">Feedback: (most recent on top) </div>
+        <textarea id="feedbackArea" rows="10" cols="80" readonly></textarea>
+    </form>
+</body>
+</html>
